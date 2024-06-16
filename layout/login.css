@@ -1,0 +1,167 @@
+/* ===IMPORTATION FONT=== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+/* ===FIN IMPORTATION FONT=== */
+
+/* ===DEFINITION VARIABLE=== */
+
+:root {
+
+     /* ==COLORS== */
+     --color-50: #F2F9F9;
+     --color-100: #DDEFF0;
+     --color-200: #BFE0E2;
+     --color-300: #92CACE;
+     --color-400: #5FAAB1;
+     --color-500-primary: #438E96;
+     --color-600: #3B757F;
+     --color-700: #356169;
+     --color-800: #325158;
+     --color-900: #2D464C;
+     --color-950: #1A2C32;
+
+     /* ==SIZE== */
+     --size-32: 32px;
+     --size-24: 24px;
+     --size-18: 18px;
+     --size-16: 16px;
+
+     /* ==WEIGHT== */
+     --weight-regular: 400;
+     --weight-medium: 500;
+     --weight-semibold: 700;
+     --weight-extrabold: 800;
+}
+
+/* === FIN DEFINITION VARIABLE=== */
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     list-style: none;
+     text-decoration: none;
+     font-family: "Inter", sans-serif;
+     scroll-behavior: smooth;
+}
+
+/* === BASE === */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     list-style: none;
+     text-decoration: none;
+     font-family: "Inter", sans-serif;
+     scroll-behavior: smooth;
+}
+
+body {
+     width: 100%;
+     height: 100vh;
+     background-color: var(--color-50);
+}
+
+.btn {
+     padding: 8px 16px;
+     background-color: var(--color-500-primary);
+     border-radius: 100px;
+     color: var(--color-50);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 8px;
+}
+
+/* === FIN BASE === */
+
+/* ======================================================== */
+
+/* === HEADER === */
+
+.header {
+     position: absolute;
+     top: 0;
+     width: 100%;
+     padding: 24px 32px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     z-index: 1;
+}
+
+/* === FIN HEADER === */
+
+/* CONTAINER */
+
+.container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.container .right {
+     height: 100vh;
+}
+
+.container .left {
+     width: 32%;
+     margin: 0 auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 24px;
+}
+
+.left .titleLogin {
+     font-size: var(--size-24);
+     font-weight: var(--weight-semibold);
+     color: var(--color-950);
+}
+
+.titleLogin .logo {
+     font-family: "MuseoModerno", sans-serif;
+     color: var(--color-500-primary);
+}
+
+.left .containerLogin {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 24px;
+}
+
+.containerLogin .containerInput {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 8px;
+}
+
+.containerInput .inputLogin {
+     width: 100%;
+     padding: 16px 24px;
+     background-color: var(--color-100);
+     border: none;
+     border-radius: 100px;
+     color: var(--color-500-primary);
+     font-size: var(--size-16);
+     font-weight: var(--weight-regular);
+}
+
+.containerLogin .btnSub {
+     width: 100%;
+     padding: 13px;
+     background-color: var(--color-500-primary);
+     border: none;
+     border-radius: 100px;
+     color: var(--color-50);
+     font-size: var(--size-16);
+     font-weight: var(--weight-regular);
+     cursor: pointer;
+}

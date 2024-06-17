@@ -14,7 +14,7 @@
                <h1 class="title">Téléphone IP</h1>
                <p class="description">Un téléphone IP, est un dispositif qui permet de communiquer avec la voix par internet en utilisant le protocol SIP.
                </p>
-               <a href="../pages/switch.php" class="btn">
+               <a href="#sec2" class="btn">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                          <path d="M16 10L12 14L8 10" stroke="#F2F9F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>

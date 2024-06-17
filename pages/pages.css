@@ -225,4 +225,9 @@ body::-webkit-scrollbar-thumb {
      font-weight: var(--weight-regular);
 }
 
+.sec3 .cli {
+     background-color: var(--color-900);
+     border-radius: 16px;
+}
+
 /* === FIN SEC3 === */

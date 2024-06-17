@@ -87,6 +87,17 @@
                </h2>
           </div>
           <p class="para">Pour identifie le switch, nous allons d'abord lui changer son nom.</p>
+
+          <div class="cli">
+               <div class="headerCli">
+                    <p class="titleCli">Invite de commande du Switch</p>
+               </div>
+
+               <div class="bodyCli">
+                    
+               </div>
+          </div>
+
           <div class="infraTitle">
                <h2 class="infraTitleText" style="font-size: var(--size-18);">
                     Connexion des PCs au Switch

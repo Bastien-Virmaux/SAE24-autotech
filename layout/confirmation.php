@@ -19,7 +19,7 @@ $email = $_GET['email'];
 
 //connexion à la bd
 try {
-     $mySqlConnection = new PDO('mysql:host=192.168.0.110; dbname=autotech; charset=utf8', 'root', 'Azerty');
+     $mySqlConnection = new PDO('mysql:host=192.168.0.110:3306; dbname=autotech; charset=utf8', 'root', 'Azerty');
 } catch (Exception $e) {
      die('Erreur : ' . $e->getMessage());
 }

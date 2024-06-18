@@ -78,11 +78,11 @@ Toute explication doit utiliser la balise `<p class="para"></p>`.
 
 Il existe deux types de listes :
 
-**Premier Niveau**
+**Premier Niveau** <br>
 Format : `<ul><li></li></ul>`
 À utiliser en priorité !
 
-**Deuxième Niveau**
+**Deuxième Niveau** <br>
 Format : `<ol><li></li></ol>`
 À utiliser si vous devez faire une seconde liste dans le premier niveau.
 

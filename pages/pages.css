@@ -264,10 +264,30 @@ body::-webkit-scrollbar-thumb {
      font-weight: var(--weight-semibold);
 }
 
+.formatCommande .comment {
+     color: greenyellow;
+}
+
 .sec3 .cmd-spec {
      padding: 2px 4px;
      border-radius: 3px;
      background-color: var(--color-300);
+}
+
+.sec3 ul {
+     padding-left: 24px;
+}
+
+.sec3 ol {
+     padding-left: 32px;
+}
+
+.sec3 ul li {
+     list-style: disc;
+}
+
+.sec3 ol li {
+     list-style: circle;
 }
 
 /* === FIN SEC3 === */

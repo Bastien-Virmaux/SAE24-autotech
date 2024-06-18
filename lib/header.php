@@ -5,11 +5,11 @@
           <a href="#offres">
                <li class="list">Nos offres</li>
           </a>
-          <a href="#aVendre">
-               <li class="list">A vendre</li>
+          <a href="#rendezVous">
+               <li class="list">Prendre un rendez-vous</li>
           </a>
           <a href="#aVendre">
-               <li class="list">Prendre un rendez-vous</li>
+               <li class="list">A vendre</li>
           </a>
           <a href="#infrastructure">
                <li class="list">Infrastructures</li>

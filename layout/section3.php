@@ -1,5 +1,5 @@
-<section class="section sec3" id="aVendre">
-     <h1 class="titleSection">Véhicule à Vendre</h1>
+<section class="section sec3" id="rendezVous">
+     <h1 class="titleSection">Prendre un rendez-vous</h1>
      <form class="rdvContainer" action="/layout/confirmation.php" method="GET">
           <input type="text" class="inputRdv" name="nom" placeholder="Votre nom" require>
           <input type="text" class="inputRdv" name="prenom" placeholder="Votre prénom" require>

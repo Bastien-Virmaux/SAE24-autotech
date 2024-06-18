@@ -37,7 +37,7 @@
           <div class="material">
                <img class="imgMaterial" src="../assets/img/img_miniPc.png" alt="photo de pc" />
                <h2 class="materialText">Mini PC</h2>
-               <a href="#" class="btn">Voir les détails</a>
+               <a href="../pages/miniPC.php" class="btn">Voir les détails</a>
           </div>
           <div class="material">
                <img class="imgMaterial" src="../assets/img/img_pa.png" alt="photo de point d'accès wifi" />

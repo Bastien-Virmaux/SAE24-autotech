@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <section class="section sec5" id="infrastructure">
      <h1 class="titleSection">Notre infrastructure</h1>
 
@@ -38,7 +37,7 @@
           <div class="material">
                <img class="imgMaterial" src="../assets/img/img_miniPc.png" alt="photo de pc" />
                <h2 class="materialText">Mini PC</h2>
-               <a href="../pages/miniPC.php" class="btn">Voir les détails</a>
+               <a href="#" class="btn">Voir les détails</a>
           </div>
           <div class="material">
                <img class="imgMaterial" src="../assets/img/img_pa.png" alt="photo de point d'accès wifi" />
@@ -76,7 +75,7 @@
           </div>
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_grafana.png" alt="photo du service GRAFANA" />
-               <h2 class="serviceTextWin">GRAFANA</h2>
+               <h2 class="serviceTextWin">ZABBIX</h2>
                <a href="#" class="btn">Voir les détails</a>
           </div>
      </div>
@@ -91,7 +90,7 @@
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_dhcp.png" alt="photo du service DHCP" />
                <h2 class="serviceTextWin">DHCP</h2>
-               <a href="#" class="btn">Voir les détails</a>
+               <a href="../pages/dhcp.php" class="btn">Voir les détails</a>
           </div>
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_clock.png" alt="photo du service NTP" />
@@ -126,7 +125,7 @@
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_mongo.png" alt="photo du service asterisk" />
                <h2 class="serviceTextWin">MONGODB</h2>
-               <a href="#" class="btn">Voir les détails</a>
+               <a href="../pages/mongodb.php" class="btn">Voir les détails</a>
           </div>
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_sql.png" alt="photo du service mySQL" />
@@ -158,9 +157,4 @@
                <a href="#" class="btn">Voir les</a>
           </div>
      </div>
-=======
-<section class="section sec5" id="aProposDeNous">
-     <h1 class="titleSection">A propos de nous</h1>
-
->>>>>>> origin/second
 </section>

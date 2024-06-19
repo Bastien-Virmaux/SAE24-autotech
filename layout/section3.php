@@ -1,16 +1,42 @@
-<<<<<<< HEAD
-<section class="section sec3" id="rendezVous">
-     <h1 class="titleSection">Prendre un rendez-vous</h1>
-=======
+<?php
+//connexion à la bd
+try {
+     $mySqlConnection = new PDO('mysql:host=localhost:8889; dbname=autotech; charset=utf8', 'root', 'root');
+} catch (Exception $e) {
+     die('Erreur : ' . $e->getMessage());
+}
+
+$voitureRequest = "SELECT * FROM `voiture`";
+
+$request = $mySqlConnection->prepare($voitureRequest);
+$request->execute();
+$resultat = $request->fetchAll($mode = PDO::FETCH_CLASS);
+
+$resultatDecode = json_decode(json_encode($resultat), true);
+
+
+?>
+
+<!-- <pre>
+     <?php
+     print_r($resultat);
+     ?>
+</pre> -->
+
 <section class="section sec3" id="aVendre">
      <h1 class="titleSection">Véhicule à Vendre</h1>
->>>>>>> origin/second
-     <form class="rdvContainer" action="/layout/confirmation.php" method="GET">
-          <input type="text" class="inputRdv" name="nom" placeholder="Votre nom" require>
-          <input type="text" class="inputRdv" name="prenom" placeholder="Votre prénom" require>
-          <input type="text" class="inputRdv" name="description" placeholder="Description bref" require>
-          <input type="tel" class="inputRdv" name="tel" placeholder="Votre numéro de téléphone" require>
-          <input type="email" class="inputRdv" name="email" placeholder="Votre email" require>
-          <input class="btn" type="submit" value="Envoyer !">
-     </form>
+
+     <div class="containerVoiture">
+          <?php foreach ($resultatDecode as $voiture) : ?>
+               <div class="voitures">
+                    <img class="img" src="<?php echo $voiture["img"] ?>" alt="photo de voiture">
+                    <p class="nom"><?php echo $voiture["nom"] ?></p>
+                    <p class="marque"><?php echo $voiture["marque"] ?></p>
+                    <p class="kil"><?php echo $voiture["kilometrage"] ?></p>
+                    <p class="prix"><?php echo $voiture["prix"] ?></p>
+               </div>
+          <?php endforeach ?>
+     </div>
+
+
 </section>

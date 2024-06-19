@@ -136,10 +136,7 @@ body::-webkit-scrollbar-thumb {
      height: 100vh;
      padding: 32px;
      background-color: rgb(0, 0, 0, 13%);
-<<<<<<< HEAD
-=======
      -webkit-backdrop-filter: blur(40px);
->>>>>>> origin/second
      backdrop-filter: blur(40px);
      display: flex;
      justify-content: flex-start;
@@ -218,10 +215,7 @@ body::-webkit-scrollbar-thumb {
      height: 50%;
      padding: 16px;
      background-color: rgb(0, 0, 0, 13%);
-<<<<<<< HEAD
-=======
      -webkit-backdrop-filter: blur(40px);
->>>>>>> origin/second
      backdrop-filter: blur(40px);
      border-radius: 16px;
      display: flex;
@@ -245,19 +239,43 @@ body::-webkit-scrollbar-thumb {
      font-weight: var(--weight-regular);
 }
 
-
-/* === FIN SECTION 2 === */
-
 /* ======================================================== */
 
 /* === SECTION 3 === */
 
 .sec3 {
      height: 100vh;
+}
+
+.sec3 .containerVoiture {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 16px;
+}
+
+.containerVoiture .voitures {
+     padding: 8px;
+     border-radius: 16px;
+     background-color: var(--color-100);
+}
+
+.voitures .img {
+     width: 500px;
+}
+
+/* === FIN SECTION 3 === */
+
+/* ======================================================== */
+
+/* === SECTION 4 === */
+
+.sec4 {
+     height: 100vh;
      padding: 40px;
 }
 
-.sec3 .rdvContainer {
+.sec4 .rdvContainer {
      margin-top: 24px;
      display: flex;
      justify-content: center;
@@ -277,27 +295,12 @@ body::-webkit-scrollbar-thumb {
      font-weight: var(--weight-regular);
 }
 
-/* === FIN SECTION 3 === */
-
-/* ======================================================== */
-
-<<<<<<< HEAD
-/* === SECTION 4 ===*/
-
-.sec4 {
-     height: 100vh;
-}
-
 /* === FIN SECTION 4 === */
 
 /* ======================================================== */
 
 /* === SECTION 5 === */
 .sec5 {
-=======
-/* === SECTION 4 === */
-.sec4 {
->>>>>>> origin/second
      padding: 32px;
      display: flex;
      flex-direction: column;
@@ -305,10 +308,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .infraTitle {
-<<<<<<< HEAD
-=======
      width: -moz-fit-content;
->>>>>>> origin/second
      width: fit-content;
      padding: 16px 32px;
      background-color: var(--color-100);
@@ -409,7 +409,6 @@ body::-webkit-scrollbar-thumb {
 
 /* ==STYLE GRID== */
 
-<<<<<<< HEAD
 /* === FIN SECTION 5 === */
 
 /* ======================================================== */
@@ -421,19 +420,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* === FIN SECTION 6 === */
-=======
-/* === FIN SECTION 4 === */
-
-/* ======================================================== */
-
-/* === SECTION 5 === */
-
-.sec5 {
-     height: 100vh;
-}
-
-/* === FIN SECTION 5 === */
->>>>>>> origin/second
 
 /* ======================================================== */
 

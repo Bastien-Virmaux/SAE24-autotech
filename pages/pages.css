@@ -67,7 +67,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .section {
-     width: 100%;
+     min-width: 100%;
      background-color: var(--color-50);
 }
 
@@ -90,7 +90,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .section {
-     height: 100vh;
+     min-height: 100vh;
      padding: 24px;
 }
 
@@ -185,7 +185,8 @@ body::-webkit-scrollbar-thumb {
 /* === SEC3 === */
 
 .sec3 {
-     height: 100vh;
+     min-height: 100vh;
+     padding-bottom: 200px;
 }
 
 .sec3 .orgRappel {

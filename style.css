@@ -273,8 +273,18 @@ body::-webkit-scrollbar-thumb {
 
 /* ======================================================== */
 
-/* === SECTION 4 === */
+/* === SECTION 4 ===*/
+
 .sec4 {
+     height: 100vh;
+}
+
+/* === FIN SECTION 4 === */
+
+/* ======================================================== */
+
+/* === SECTION 5 === */
+.sec5 {
      padding: 32px;
      display: flex;
      flex-direction: column;
@@ -382,17 +392,17 @@ body::-webkit-scrollbar-thumb {
 
 /* ==STYLE GRID== */
 
-/* === FIN SECTION 4 === */
+/* === FIN SECTION 5 === */
 
 /* ======================================================== */
 
-/* === SECTION 5 === */
+/* === SECTION 6 === */
 
-.sec5 {
+.sec6 {
      height: 100vh;
 }
 
-/* === FIN SECTION 5 === */
+/* === FIN SECTION 6 === */
 
 /* ======================================================== */
 

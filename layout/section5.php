@@ -61,7 +61,7 @@
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_dns.png" alt="photo du service DNS" />
                <h2 class="serviceTextWin">DNS</h2>
-               <a href="#" class="btn">Voir les détails</a>
+               <a href="../pages/dns.php" class="btn">Voir les détails</a>
           </div>
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_ad.png" alt="photo du service Active Directory" />
@@ -71,7 +71,7 @@
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_sauvegarde.png" alt="photo du service SYNCBACK" />
                <h2 class="serviceTextWin">SYNCBACK</h2>
-               <a href="#" class="btn">Voir les détails</a>
+               <a href="../pages/Syncback.php" class="btn">Voir les détails</a>
           </div>
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_grafana.png" alt="photo du service GRAFANA" />
@@ -113,8 +113,8 @@
                <a href="#" class="btn">Voir les détails</a>
           </div>
           <div class="service">
-               <img class="imgServiceWin" src="../assets/img/img_ast.png" alt="photo du service SMTP/POP" />
-               <h2 class="serviceTextWin">Asterisk</h2>
+               <img class="imgServiceWin" src="../assets/img/img_freePBX.png" alt="photo du service SMTP/POP" />
+               <h2 class="serviceTextWin">FreePBX</h2>
                <a href="#" class="btn">Voir les détails</a>
           </div>
           <div class="service">

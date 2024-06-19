@@ -125,7 +125,7 @@
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_mongo.png" alt="photo du service asterisk" />
                <h2 class="serviceTextWin">MONGODB</h2>
-               <a href="#" class="btn">Voir les détails</a>
+               <a href="../pages/mongodb.php" class="btn">Voir les détails</a>
           </div>
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_sql.png" alt="photo du service mySQL" />

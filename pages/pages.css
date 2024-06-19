@@ -226,8 +226,48 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sec3 .cli {
+     margin-top: 16px;
      background-color: var(--color-900);
      border-radius: 16px;
+}
+
+.cli .headerCli {
+     padding: 16px;
+     text-align: start;
+     border-bottom: 1px solid var(--color-50);
+}
+
+.headerCli .titleCli {
+     color: var(--color-100);
+     font-size: var(--size-18);
+     font-weight: var(--weight-regular);
+}
+
+.cli .bodyCli {
+     padding: 24px;
+}
+
+.bodyCli .formatCommande {
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     gap: 8px;
+}
+
+.formatCommande .invite,
+.commande {
+     color: var(--color-100);
+     font-size: var(--size-16);
+}
+
+.formatCommande .invite {
+     font-weight: var(--weight-semibold);
+}
+
+.sec3 .cmd-spec {
+     padding: 2px 4px;
+     border-radius: 3px;
+     background-color: var(--color-300);
 }
 
 /* === FIN SEC3 === */

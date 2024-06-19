@@ -73,6 +73,7 @@ body::-webkit-scrollbar-thumb {
      padding: 8px 16px;
      background-color: var(--color-500-primary);
      border-radius: 100px;
+     border: none;
      color: var(--color-50);
      display: flex;
      justify-content: center;
@@ -245,6 +246,27 @@ body::-webkit-scrollbar-thumb {
 
 .sec3 {
      height: 100vh;
+     padding: 40px;
+}
+
+.sec3 .rdvContainer {
+     margin-top: 24px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 8px;
+     flex-direction: column;
+}
+
+.rdvContainer .inputRdv {
+     width: 30%;
+     padding: 16px 24px;
+     border: none;
+     border-radius: 8px;
+     background-color: var(--color-100);
+     color: var(--color-500-primary);
+     font-size: var(--size-16);
+     font-weight: var(--weight-regular);
 }
 
 /* === FIN SECTION 3 === */
@@ -299,7 +321,7 @@ body::-webkit-scrollbar-thumb {
      height: inherit;
      display: grid;
      grid-template-columns: repeat(3, 1fr);
-     grid-template-rows: repeat(3, 1fr);
+     grid-template-rows: repeat(2, 1fr);
      grid-column-gap: 24px;
      grid-row-gap: 24px;
 }

@@ -22,7 +22,7 @@
           <div class="material">
                <img class="imgMaterial" src="../assets/img/img_routeur.png" alt=" photo de routeur" />
                <h2 class="materialText">Routeur</h2>
-               <a href="#" class="btn">Voir les détails</a>
+               <a href="../pages/routeur.php" class="btn">Voir les détails</a>
           </div>
           <div class="material">
                <img class="imgMaterial" src="../assets/img/img_parefeu.png" alt="photo de pare-feu" />
@@ -32,7 +32,7 @@
           <div class="material">
                <img class="imgMaterial" src="../assets/img/img_telIp.png" alt="photo de téléphone IP" />
                <h2 class="materialText">Téléphone IP</h2>
-               <a href="#" class="btn">Voir les détails</a>
+               <a href="../pages/telIP.php" class="btn">Voir les détails</a>
           </div>
           <div class="material">
                <img class="imgMaterial" src="../assets/img/img_miniPc.png" alt="photo de pc" />
@@ -42,16 +42,6 @@
           <div class="material">
                <img class="imgMaterial" src="../assets/img/img_pa.png" alt="photo de point d'accès wifi" />
                <h2 class="materialText">Point d'accès wifi</h2>
-               <a href="#" class="btn">Voir les détails</a>
-          </div>
-          <div class="material">
-               <img class="imgMaterial" src="../assets/img/img_server.png" alt="photo d'un serveur" />
-               <h2 class="materialText">Serveur d'appel</h2>
-               <a href="#" class="btn">Voir les détails</a>
-          </div>
-          <div class="material">
-               <img class="imgMaterial" src="../assets/img/img_ethernet.png" alt="photo d'un câble ethernet" />
-               <h2 class="materialText">Câbles</h2>
                <a href="#" class="btn">Voir les détails</a>
           </div>
      </div>
@@ -100,7 +90,7 @@
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_dhcp.png" alt="photo du service DHCP" />
                <h2 class="serviceTextWin">DHCP</h2>
-               <a href="#" class="btn">Voir les détails</a>
+               <a href="../pages/dhcp.php" class="btn">Voir les détails</a>
           </div>
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_clock.png" alt="photo du service NTP" />

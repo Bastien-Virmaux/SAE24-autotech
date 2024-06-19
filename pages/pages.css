@@ -205,6 +205,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sec3 .infraTitle {
+     width: -moz-fit-content;
      width: fit-content;
      margin-top: 16px;
      padding: 16px 32px;
@@ -289,6 +290,10 @@ body::-webkit-scrollbar-thumb {
 
 .sec3 ol li {
      list-style: circle;
+}
+
+.sec3 .tab {
+     opacity: 0;
 }
 
 /* === FIN SEC3 === */

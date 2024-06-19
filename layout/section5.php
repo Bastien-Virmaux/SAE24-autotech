@@ -1,4 +1,4 @@
-<section class="section sec5" id="infrastructure">
+<section class="section sec4" id="infrastructure">
      <h1 class="titleSection">Notre infrastructure</h1>
 
      <div class="infraTitle">
@@ -75,7 +75,7 @@
           </div>
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_grafana.png" alt="photo du service GRAFANA" />
-               <h2 class="serviceTextWin">ZABBIX</h2>
+               <h2 class="serviceTextWin">GRAFANA</h2>
                <a href="#" class="btn">Voir les détails</a>
           </div>
      </div>
@@ -100,7 +100,7 @@
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_proxy.png" alt="photo du service PROXY" />
                <h2 class="serviceTextWin">PROXY</h2>
-               <a href="#" class="btn">Voir les détails</a>
+               <a href="../pages/proxy.php" class="btn">Voir les détails</a>
           </div>
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_vpn.png" alt="photo du service VPN" />

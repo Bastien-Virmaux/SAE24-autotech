@@ -67,7 +67,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .section {
+<<<<<<< HEAD
      width: 100%;
+=======
+     min-width: 100%;
+>>>>>>> origin/second
      background-color: var(--color-50);
 }
 
@@ -90,7 +94,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .section {
+<<<<<<< HEAD
      height: 100vh;
+=======
+     min-height: 100vh;
+>>>>>>> origin/second
      padding: 24px;
 }
 
@@ -185,7 +193,12 @@ body::-webkit-scrollbar-thumb {
 /* === SEC3 === */
 
 .sec3 {
+<<<<<<< HEAD
      height: 100vh;
+=======
+     min-height: 100vh;
+     padding-bottom: 200px;
+>>>>>>> origin/second
 }
 
 .sec3 .orgRappel {
@@ -204,6 +217,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sec3 .infraTitle {
+<<<<<<< HEAD
+=======
+     width: -moz-fit-content;
+>>>>>>> origin/second
      width: fit-content;
      margin-top: 16px;
      padding: 16px 32px;
@@ -264,16 +281,20 @@ body::-webkit-scrollbar-thumb {
      font-weight: var(--weight-semibold);
 }
 
+<<<<<<< HEAD
 .formatCommande .comment {
      color: greenyellow;
 }
 
+=======
+>>>>>>> origin/second
 .sec3 .cmd-spec {
      padding: 2px 4px;
      border-radius: 3px;
      background-color: var(--color-300);
 }
 
+<<<<<<< HEAD
 .sec3 ul {
      padding-left: 24px;
 }
@@ -291,4 +312,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+=======
+>>>>>>> origin/second
 /* === FIN SEC3 === */

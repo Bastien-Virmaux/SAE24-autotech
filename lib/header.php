@@ -5,12 +5,21 @@
           <a href="#offres">
                <li class="list">Nos offres</li>
           </a>
+<<<<<<< HEAD
           <a href="#rendezVous">
                <li class="list">Prendre un rendez-vous</li>
           </a>
           <a href="#aVendre">
                <li class="list">A vendre</li>
           </a>
+=======
+          <a href="#aVendre">
+               <li class="list">A vendre</li>
+          </a>
+          <a href="#aVendre">
+               <li class="list">Prendre un rendez-vous</li>
+          </a>
+>>>>>>> origin/second
           <a href="#infrastructure">
                <li class="list">Infrastructures</li>
           </a>

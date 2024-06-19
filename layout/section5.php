@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <section class="section sec5" id="infrastructure">
      <h1 class="titleSection">Notre infrastructure</h1>
 
@@ -157,4 +158,9 @@
                <a href="#" class="btn">Voir les</a>
           </div>
      </div>
+=======
+<section class="section sec5" id="aProposDeNous">
+     <h1 class="titleSection">A propos de nous</h1>
+
+>>>>>>> origin/second
 </section>

@@ -31,9 +31,12 @@ $resultatDecode = json_decode(json_encode($resultat), true);
                <div class="voitures">
                     <img class="img" src="<?php echo $voiture["img"] ?>" alt="photo de voiture">
                     <p class="nom"><?php echo $voiture["nom"] ?></p>
-                    <p class="marque"><?php echo $voiture["marque"] ?></p>
-                    <p class="kil"><?php echo $voiture["kilometrage"] ?></p>
-                    <p class="prix"><?php echo $voiture["prix"] ?></p>
+                    <div class="info">
+                         <p class="tag"><?php echo $voiture["marque"] ?></p>
+                         <p class="tag"><?php echo $voiture["kilometrage"] ?></p>
+                         <p class="tag"><?php echo $voiture["prix"] ?>€</p>
+                    </div>
+                    <button class="btn">Acheter</button>
                </div>
           <?php endforeach ?>
      </div>

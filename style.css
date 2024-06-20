@@ -258,10 +258,33 @@ body::-webkit-scrollbar-thumb {
      padding: 8px;
      border-radius: 16px;
      background-color: var(--color-100);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 8px;
+     flex-direction: column;
 }
 
 .voitures .img {
      width: 500px;
+}
+
+.voitures .nom {
+     text-align: center;
+     font-size: 18px;
+}
+
+.voitures .info {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 8px;
+}
+
+.info .tag {
+     border-radius: 100px;
+     padding: 4px 8px;
+     background-color: var(--color-200);
 }
 
 /* === FIN SECTION 3 === */

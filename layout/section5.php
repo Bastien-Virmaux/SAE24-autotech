@@ -109,8 +109,8 @@
           </div>
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_mail.png" alt="photo du service SMTP/POP" />
-               <h2 class="serviceTextWin">SMTP/POP</h2>
-               <a href="#" class="btn">Voir les détails</a>
+               <h2 class="serviceTextWin">Email</h2>
+               <a href="../pages/smtp_pop.php" class="btn">Voir les détails</a>
           </div>
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_freePBX.png" alt="photo du service SMTP/POP" />
@@ -149,12 +149,12 @@
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_git.png" alt="photo du service GIT" />
                <h2 class="serviceTextWin">GIT</h2>
-               <a href="#" class="btn">Voir les</a>
+               <a href="#" class="btn">Voir les détails</a>
           </div>
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_ssh.png" alt="photo du service SSH" />
                <h2 class="serviceTextWin">SSH</h2>
-               <a href="#" class="btn">Voir les</a>
+               <a href="#" class="btn">Voir les détails</a>
           </div>
      </div>
 </section>

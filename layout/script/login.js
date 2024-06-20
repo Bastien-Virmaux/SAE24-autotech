@@ -1,6 +1,6 @@
 import { login } from "../api/api.js";
 
-function handleLogin( token, userId, name) {
+function handleLogin(token, userId, name) {
     localStorage.setItem('token', token);
     localStorage.setItem('userId', userId);
     localStorage.setItem('name', name);
@@ -26,7 +26,7 @@ async function handleSubmit(e) {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const form = document.querySelector('form.containerLogin');
     form.addEventListener('submit', handleSubmit);
 });

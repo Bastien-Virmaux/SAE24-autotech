@@ -66,6 +66,7 @@ body::-webkit-scrollbar-thumb {
 
 .section {
      width: 100%;
+     padding: 100px 0 100px 0;
      background-color: var(--color-50);
 }
 
@@ -176,7 +177,6 @@ body::-webkit-scrollbar-thumb {
 /* === SECTION 2 === */
 
 .sec2 {
-     height: 100vh;
      padding: 40px;
      display: flex;
      justify-content: center;
@@ -244,7 +244,7 @@ body::-webkit-scrollbar-thumb {
 /* === SECTION 3 === */
 
 .sec3 {
-     height: 100vh;
+     /* ihezof */
 }
 
 .sec3 .containerVoiture {
@@ -295,7 +295,6 @@ body::-webkit-scrollbar-thumb {
 /* === SECTION 4 === */
 
 .sec4 {
-     height: 100vh;
      padding: 40px;
 }
 

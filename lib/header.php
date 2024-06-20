@@ -8,7 +8,7 @@
           <a href="#aVendre">
                <li class="list">A vendre</li>
           </a>
-          <a href="#aVendre">
+          <a href="#prdUnRendezVous">
                <li class="list">Prendre un rendez-vous</li>
           </a>
           <a href="#infrastructure">

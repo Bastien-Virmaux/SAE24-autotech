@@ -1,44 +1,47 @@
 <?php
-// Configuration des informations de connexion SSH
-$ssh_host = '192.168.0.110';
-$ssh_port = 22;
-$ssh_user = 'srv-debian'; // Remplacez par votre nom d'utilisateur SSH
-$ssh_key = '/path/to/private/key'; // Chemin vers la clé privée SSH
+ini_set('display_erros', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-// Chemin du fichier de log Squid sur le serveur distant
-$log_file_path = '/var/log/squid/access.log';
+# Inclure les bibliothèques nécessaires
+require '../vendor/autoload.php';
 
-// Initialiser la connexion SSH
-$connection = ssh2_connect($ssh_host, $ssh_port);
+use phpseclib3\Net\SSH2;
 
-if (!$connection) {
-     die('Erreur : Impossible de se connecter au serveur SSH');
+$server_ip = "192.168.0.110";
+$port = 22;
+$username = "debian-srv";
+$password = "Azerty123";
+$log_file_path = "/var/log/squid/access.log";
+
+$ssh = new SSH2($server_ip, $port);
+
+if (!$ssh->login($username, $password)) {
+     exit('Connexion SSH échouée.');
 }
 
-// Authentification via clé privée
-if (!ssh2_auth_pubkey_file($connection, $ssh_user, $ssh_key . '.pub', $ssh_key)) {
-     die('Erreur : Authentification SSH échouée');
+$log = $ssh->exec('cat ' . $log_file_path);
+
+function parseLogLine($line)
+{
+     $parts = preg_split('/\s+/', $line);
+     return $parts;
 }
 
-// Lire le fichier de log
-$sftp = ssh2_sftp($connection);
-$log_file = fopen("ssh2.sftp://$sftp$log_file_path", 'r');
+function formatDateTime($timestamp)
+{
+     $date = DateTime::createFromFormat('U.u', $timestamp, new DateTimeZone('UTC'));
+     if ($date) {
+          $date->setTimezone(new DateTimeZone('Europe/Paris'));
+          return $date->format('d/m/Y H:i:s');
+     }
 
-if (!$log_file) {
-     die('Erreur : Impossible de lire le fichier de log');
+     return $timestamp;
 }
 
-// Afficher les logs
-echo '<h1>Logs de Squid</h1>';
-echo '<pre>';
+$logLines = explode("\n", $log);
+$logEntries = array_map('parseLogLine', $logLines);
+$logEntries = array_reverse($logEntries);
+?>
 
-while ($line = fgets($log_file)) {
-     echo htmlspecialchars($line);
-}
-
-echo '</pre>';
-
-fclose($log_file);
-
-// Fermer la connexion SSH
-ssh2_disconnect($connection);
+<?php print_r($logEntries) ?>

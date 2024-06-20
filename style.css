@@ -248,6 +248,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sec3 .containerVoiture {
+     margin-top: 16px;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -266,7 +267,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .voitures .img {
-     width: 500px;
+     width: 300px;
 }
 
 .voitures .nom {

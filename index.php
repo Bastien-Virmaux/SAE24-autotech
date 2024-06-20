@@ -19,6 +19,8 @@
      require "./layout/section6.php";
      require "./lib/footer.php";
      ?>
+
+     <script src="./layout/script/name.js"></script>
 </body>
 
 </html>

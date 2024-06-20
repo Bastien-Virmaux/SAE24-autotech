@@ -40,7 +40,7 @@
           </div>
 
           <!-- == Modifier l'image associé à l'élément et le ALT == -->
-          <img src="../assets/img/img_[element].png" alt="illustation d'un [element]">
+          <img src="../assets/img/img_ad.png" alt="illustation d'un active directory">
           <!-- == FIN Modifier l'image associé à l'élément et le ALT == -->
 
      </section>
@@ -67,12 +67,12 @@
                          <h2 class="titleOrg">Configuration</h2>
                          <!-- == Modifier/Ajouter les chose à configurer en rapport avec l'élément == -->
                          <li>Configuration du domaine</li>
-                         <li>Configuration des Unité Organisationnelle</li>
+                         <li>Configuration des Unités Organisationnelles</li>
                          <li>Configuration des utilisateurs</li>
                          <li>Configuration d'une GPO pour les comptes itératifs</li>
-                         <li>Configuration d'une GPO fond d'écran</li>
+                         <li>Configuration d'une GPO fonds d'écrans</li>
                          <li>Configuration d'une GPO pour le proxy</li>
-                         <li>Configuration d'une GPO pour les raccourcie bureau</li>
+                         <li>Configuration d'une GPO pour les raccourcis bureaux</li>
                          <!-- == FIN Modifier/Ajouter les chose à configurer en rapport avec l'élément == -->
                     </ul>
                </div>
@@ -110,7 +110,7 @@
                     <li>On clique sur "suivant"</li>
                     <li>On clique sur "suivant"*3</li>
                     <li>On coche "AD DS"</li>
-                    <li>On clique sur "suivant" jusqu'arriver sur "Confirmation"</li>
+                    <li>On clique sur "suivant" jusqu'à arriver sur "Confirmation"</li>
                     <li>On clique sur "installer"</li>
                     <li>Le service s'installe</li>
                </ul>
@@ -129,12 +129,12 @@
                <h2 class="titleOrg">Rappel : Configuration</h2>
                <!-- == Copier/Coller les élement décrit dans la section 2  -->
                <li>Configuration du domaine</li>
-               <li>Configuration des Unité Organisationnelle</li>
+               <li>Configuration des Unités Organisationnelles</li>
                <li>Configuration des utilisateurs</li>
                <li>Configuration d'une GPO pour les comptes itératifs</li>
-               <li>Configuration d'une GPO fond d'écran</li>
+               <li>Configuration d'une GPO fonds d'écrans</li>
                <li>Configuration d'une GPO pour le proxy</li>
-               <li>Configuration d'une GPO pour les raccourcie bureau</li>
+               <li>Configuration d'une GPO pour les raccourcis bureaux</li>
                <!-- == FIN Copier/Coller les élement décrit dans la section 2  -->
           </ul>
 
@@ -147,11 +147,11 @@
           <!-- == FIN Ajouter/Modifier le text pour qu'il corresponde à la première tâche décrite dans la section 2 partie installation ==  -->
 
           <!-- == Description avec ce bloc == -->
-          <p class="para">Pour configurer un domaine on se clique sur l'icon "drapeau" et "Promouvoir".</p>
+          <p class="para">Pour configurer un domaine on se clique sur l'icone "drapeau" et "Promouvoir".</p>
           <p class="para">On clique sur le bouton : "créer une nouvelle forêt" et on saisie notre nom de domaine qui est : <span class="cmd-spec">autotech.fr</span> </p>
           <p class="para">On clique sur suivant et on indique un mot de passe</p>
           <p class="para">On clique sur « suivant » jusqu’à arrive « Vérification de la configuration requise », on attend jusqu’à ce que le bouton installer soient cliquable.</p>
-          <p class="para">Le serveur redémarra à l’issue de l’installation.</p>
+          <p class="para">Le serveur redémarrera à l’issue de l’installation.</p>
           <!-- == FIN Description avec ce bloc == -->
 
           <!-- Vous pouvez utiliser d'autre élément voir le README -->
@@ -159,15 +159,15 @@
           <!-- == Ajouter/Modifier le text pour qu'il corresponde à la seconde tâche décrite dans la section 2 partie installation ==  -->
           <div class="infraTitle">
                <h2 class="infraTitleText" style="font-size: var(--size-18);">
-                    Configuration des Unité Organisationnelle
+                    Configuration des Unités Organisationnelles
                </h2>
           </div>
           <!-- == FIN Ajouter/Modifier le text pour qu'il corresponde à la seconde tâche décrite dans la section 2 partie installation ==  -->
 
           <!-- == Description avec ce bloc == -->
-          <p class="para">Nous allons crée des unité Organisationnelle qui vont nous permettre de mettre plusieurs utilisateurs pour les géré ensemble.</p>
+          <p class="para">Nous allons crée des unités organisationnelles qui vont nous permettre de mettre plusieurs utilisateurs pour les gérer ensemble.</p>
           <p class="para">Pour faire cela on se rend dans "option" puis dans "utilisateurs et ordinateurs Active Directory"</p>
-          <p class="para">On va dans le domaine <span class="cmd-spec">autotech.fr</span> puis on clique sur l'icon : "Créez une nouvelle unité d’organisation" puis on ajoute le nom des unité.</p>
+          <p class="para">On va dans le domaine <span class="cmd-spec">autotech.fr</span> puis on clique sur l'icone : "Créez une nouvelle unité d’organisation" puis on ajoute le nom des unité.</p>
           <!-- == FIN Description avec ce bloc == -->
 
           <!-- Vous pouvez utiliser d'autre élément voir le README -->

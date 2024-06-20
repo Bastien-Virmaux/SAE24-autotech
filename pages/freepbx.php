@@ -5,7 +5,7 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!-- === Modifier le titre de la page : Autotech - Infrastructure - Element === -->
-     <title>Autotech - Infrastructure - DNS</title>
+     <title>Autotech - Infrastructure - FreePBX</title>
      <!-- === FIN Modifier le titre de la page : Autotech - Infrastructure - Element === -->
      <link rel="stylesheet" href="./pages.css">
 </head>
@@ -15,11 +15,11 @@
      <section class="section sec1">
           <div class="informations">
                <!-- == Modifier le titre avec l'élement == -->
-               <h1 class="title">DNS</h1>
+               <h1 class="title">FreePBX</h1>
                <!-- == FIN Modifier le titre avec l'élement == -->
 
                <!-- == Modifier la description avec celle de l'élément -->
-               <p class="description">Le DNS (Domain Name System) est un service de traduction de noms de domaine en adresses IP.</p>
+               <p class="description">FreePBX est un logiciel open-source qui fournit une interface graphique utilisateur (GUI) pour la gestion d'un système téléphonique basé sur Asterisk.</p>
                <!-- == FIN Modifier la description avec celle de l'élément -->
 
                <!-- == Modifier la texte : Découvrir l'installation du [element] == -->
@@ -27,7 +27,7 @@
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                          <path d="M16 10L12 14L8 10" stroke="#F2F9F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                    Découvrir l'installation du DNS !
+                    Découvrir l'installation FreePBX !
                </a>
                <!-- == FIN Modifier la texte : Découvrir l'installation du [element] == -->
 
@@ -40,7 +40,7 @@
           </div>
 
           <!-- == Modifier l'image associé à l'élément et le ALT == -->
-          <img src="../assets/img/img_dns.png" alt="illustation d'un dns">
+          <img src="../assets/img/img_freePBX.png" alt="illustation de freePBX" style="width: 512px;">
           <!-- == FIN Modifier l'image associé à l'élément et le ALT == -->
 
      </section>
@@ -53,21 +53,21 @@
                <h1 class="titleSection" style="text-align: start;">Organisation de l'installation/Configuration</h1>
 
                <!-- == Modifier le contexte d'organisation, voir exemple switch, routeur, mini-pc == -->
-               <p class="descOrg">Nous allons configurer DNS afin que les éléments soient capables de traduire des adresses et donc de rendre plus simple la navigation.</p>
+               <p class="descOrg">Nous allons configurer un certain nombre d'éléments afin que le fonctionnement du réseau et la sécurité de celui-ci soient assurés.</p>
                <!-- == FIN Modifier le contexte d'organisation, voir exemple switch, routeur, mini-pc == -->
 
                <div class="organisation">
                     <ul class="org">
                          <h2 class="titleOrg">Installation</h2>
                          <!-- == Modifier/Ajouter les chose à installer en rapport avec l'élément == -->
-                         <li>Installation du rôle sur windows serveur</li>
+                         <li>Installation du serveur freePBX</li>
                          <!-- == FIN Modifier/Ajouter les chose à installer en rapport avec l'élément == -->
                     </ul>
                     <ul class="org">
                          <h2 class="titleOrg">Configuration</h2>
                          <!-- == Modifier/Ajouter les chose à configurer en rapport avec l'élément == -->
-                         <li>Configuration des redirections</li>
-                         <li>Enregistrement</li>
+                         <li>Configuration du serveur</li>
+                         <li>Configuration des utilisateurs</li>
                          <!-- == FIN Modifier/Ajouter les chose à configurer en rapport avec l'élément == -->
                     </ul>
                </div>
@@ -78,35 +78,33 @@
      <!-- === SECTION 3 === -->
      <section class="section sec3">
           <!-- == Modifier le titre avec l'élément == -->
-          <h1 class="titleSection">Installation du DNS</h1>
+          <h1 class="titleSection">Installation de freePBX</h1>
           <!-- == FIN Modifier le titre avec l'élément == -->
 
           <ul class="orgRappel">
                <h2 class="titleOrg">Rappel : Installation</h2>
                <!-- == Copier/Coller les élement décrit dans la section 2  -->
-               <li>Installation du rôle sur windows serveur</li>
+               <li>Installation du serveur freePBX</li>
                <!-- == FIN Copier/Coller les élement décrit dans la section 2  -->
           </ul>
 
           <!-- == Ajouter/Modifier le text pour qu'il corresponde à la première tâche décrite dans la section 2 partie installation ==  -->
           <div class="infraTitle">
                <h2 class="infraTitleText" style="font-size: var(--size-18);">
-                    Installation du rôle sur windows serveur
+                    Installation du serveur freePBX
                </h2>
           </div>
           <!-- == FIN Ajouter/Modifier le text pour qu'il corresponde à la première tâche décrite dans la section 2 partie installation == -->
 
           <!-- == Description avec ce bloc == -->
-          <p class="para">Afin que les différentes machines et services puissent communiquer sur internet tout en restant accessibles, nous mettons en place le service DNS.</p>
-          <p class="para">Pour cela, sur le Gestionnaire de Serveur de Windows, on fait :</p>
+          <p class="para">Pour installer le serveur freePBX on fait : </p>
           <ul>
-               <li>On va dans "Ajouter des rôles et des fonctionnalités"</li>
-               <li>On clique sur "suivant"</li>
-               <li>On clique sur "suivant"*3</li>
-               <li>On coche "DNS"</li>
-               <li>On clique sur "suivant" jusqu'arriver sur "Confirmation"</li>
-               <li>On clique sur "installer"</li>
-               <li>Le service s'installe</li>
+               <li>Sur VirtualBOX, on crée une nouvelle VM debian 11 sans image ISO.</li>
+               <li>On va ensuite dans "Configuration" puis stockage et on sélectionne "Lecteur Optique" on indique dans ce champ l'image iso.</li>
+               <li>Ensuite, on va dans système, on sélectionne "Optique" et on clique sur la fléche du haut pour qu'il boot en priorité sur l'optique.</li>
+               <li>On lance la VM</li>
+               <li>On configure un mot de passe pour le root et on laisse faire l'installation</li>
+               <li>A la fin de celui-ci, quand il nous demande de redemmarer, on ne redémarre pas mais on quitte la vm. On se rend dans "Configuration" puis "stockage" puis on clique droit sur le lecteur optique et on clique sur l'option "Supprimer le périphérique".</li>
           </ul>
           <!-- == FIN Description avec ce bloc ==  -->
 
@@ -116,69 +114,63 @@
      <!-- === SECTION 4 === -->
      <section class="section sec3">
           <!-- == Modifier le titre avec l'élément == -->
-          <h1 class="titleSection">Configuration du DNS</h1>
+          <h1 class="titleSection">Configuration du freePBX</h1>
           <!-- == Modifier le titre avec l'élément == -->
 
           <ul class="orgRappel">
                <h2 class="titleOrg">Rappel : Configuration</h2>
                <!-- == Copier/Coller les élement décrit dans la section 2  -->
-               <li>Configuration des redirections</li>
-               <li>Enregistrement</li>
+               <li>Configuration du serveur</li>
+               <li>Configuration des utilisateurs</li>
                <!-- == FIN Copier/Coller les élement décrit dans la section 2  -->
           </ul>
 
-          <!-- == Ajouter/Modifier le text pour qu'il corresponde à la première tâche décrite dans la section 2 partie installation ==  -->
-          <div class="infraTitle">
-               <h2 class="infraTitleText" style="font-size: var(--size-18);">
-                    Configuration des redirections
-               </h2>
-          </div>
-          <!-- == FIN Ajouter/Modifier le text pour qu'il corresponde à la première tâche décrite dans la section 2 partie installation ==  -->
+          <!-- == Description avec ce bloc == -->
+          <p class="para">On commence par changer la langue du serveur. Pour cela : </p>
+          <ul>
+               <li>On fait la commande : <span class="cmd-spec">system-config-keyboard</span></li>
+               <li>Une interface s'ouvre, on choisi la langue du clavier puis on clique sur ok</li>
+               <li>Ensuite, il faut configurer une adresse IP afin d'avoir accès à l'interface web. Pour cela on tape la commande : <span class="cmd-spec">nano /etc/sysconfig/network-scripts/ifcfg-eth0</span> . Dans ce fichier, on ajoute :
+                    <ul>
+                         <ol>IPADDR=192.168.0.105</ol>
+                         <ol>GATEWAY=192.168.0.254</ol>
+                         <ol>NETMASK=255.255.255.0</ol>
+                    </ul>
+               </li>
+               <li>On enregistre le fichier (ctrl + x -> yes)</li>
+               <li>Puis on redémarre le réseau : <span class="cmd-spec">service network restart</span></li>
+          </ul>
+          <!-- == FIN Description avec ce bloc == -->
 
           <!-- == Description avec ce bloc == -->
-          <p class="para">Nous allons configurer notre DNS pour qu'il agisse en <span class="cmd-spec">mode récursif</span> qui nous évite de configurer les 13 serveur source DNS présent dans le monde.</p>
-          <p class="para">Pour faire cela :</p>
-          <ul>
-               <li>Sur le gestionnaire de serveur, on va dans le menu : "outils"</li>
-               <li>On clique sur notre domaine, chez nous : "autotech.fr"</li>
-               <li>On clique droit sur le nom de la machine qui héberge le domaine chez nous : "WIN-3VT9K0MLG9N</li>
-               <li>On va dans "Proprétés"</li>
-               <li>On va dans l'onglet "Redirecteurs"</li>
-               <li>On clique sur "Modifier"</li>
-               <li>On indique l'adresse des serveur DNS de l'IUT : 192.168.117.181 et 192.168.117.182</li>
-          </ul>
-          <p class="para">Cette configuration permet a notre serveur DNS de contacter les serveur de l'IUT s'il ne connait pas une adresse.</p>
+          <p class="para">Maintenant, on accède à l'interface web en tapant sur le navigateur : <span class="cmd-spec">192.168.0.105</span></p>
+          <p class="para">Arrivé sur l'interface on doit configuré l'utilisateur principal en indiquant : Username, Password</p>
+          <p class="para">On valide la connexion à l'administration et on skip les différentes publicité.</p>
+          <p class="para">On se rend dans l'onglet "Settings" puis "Asterisk SIP Settings"</p>
+          <p class="para">On clique sur le bouton "Detect Network Settings" qui permet de détecter les paramètres réseau.</p>
+          <p class="para">Une fois détecter, on clique sur le bouton "submit" puis "Apply config".</p>
           <!-- == FIN Description avec ce bloc == -->
 
           <!-- Vous pouvez utiliser d'autre élément voir le README -->
 
-          <!-- == Ajouter/Modifier le text pour qu'il corresponde à la seconde tâche décrite dans la section 2 partie installation ==  -->
+          <!-- == Ajouter/Modifier le text pour qu'il corresponde à la troisième tâche décrite dans la section 2 partie installation ==  -->
           <div class="infraTitle">
                <h2 class="infraTitleText" style="font-size: var(--size-18);">
-                    Enregistrement
+                    Configuration des utilisateurs
                </h2>
           </div>
-          <!-- == FIN Ajouter/Modifier le text pour qu'il corresponde à la seconde tâche décrite dans la section 2 partie installation ==  -->
+          <!-- == FIN Ajouter/Modifier le text pour qu'il corresponde à la troisième tâche décrite dans la section 2 partie installation ==  -->
 
           <!-- == Description avec ce bloc == -->
-          <p class="para">Nous allons enregistrer un certain nombre d'éléments pour le bon fonctionnement du matériel avec l'option A qui permet de faire le lien entre un nom et une IP.</p>
-          <p class="para"><span class="cmd-spec">Configuration des noms d'hôtes</span></p>
-          <p class="para">On attribue à chaque PC windows un nom en allant sur Paramètres > Système > A propos de > Renommer ce PC</p>
-          <p class="para">Sur le service DNS :</p>
-          <ul>
-               <li>Toujours dans le menu DNS présent dans le menu Outils</li>
-               <li>On clique droit sur "Nouvel hôte (A ou AAAA)</li>
-               <li>On indique le nom des pc et l'adresse IP qui sont associé</li>
-          </ul>
-          <p class="para"><span class="cmd-spec">Configuration des domaines pour les sites web</span></p>
-          <p class="para">On confiure en plus deux domaine pour les site web qui sont : "support.autotech.fr" et "www.autotech.fr"</p>
-          <p class="para">Pour consfigurer les domaines : </p>
-          <ul>
-               <li>Même procédure que précedemment</li>
-               <li>On indique comme nom, "support" et "www" car le FQDN est le nom de domaine "autotech.fr"</li>
-          </ul>
-
+          <p class="para">Maintenant que la configuration réseaux est faites, on peut configurer les différents utilisateurs qui auront un téléphone.</p>
+          <p class="para">Pour cela, on se rend dans l'onglet "Application" puis "Extension"</p>
+          <p class="para">Sachant qu'on utilise le protocol SIP (Session Initiation Protocol), on va configurer des utilisateurs SIP on cliquant sur l'option : "Add new SIP"</p>
+          <p class="para">Dans l'onglet général, on configure le "Display Name", "Outbound CID (numéro qui identifie l'utilisateur et qui va permettre d'appeller)", "Secret (mot de passe de l'utilisateur)".</p>
+          <p class="para">Enfin, dans l'onglet voicemail, on active la messagerie.</p>
+          <p class="para">On peut appliquer chaque utilisateurs aux différents téléphone. Voir la partie sur l'installation de la téléphonie.</p>
           <!-- == FIN Description avec ce bloc == -->
+
+          <!-- Vous pouvez utiliser d'autre élément voir le README -->
 
      </section>
      <!-- === FIN SECTION 4 === -->

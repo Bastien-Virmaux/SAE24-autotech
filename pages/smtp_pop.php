@@ -140,7 +140,7 @@
                     </div>
                </div>
           </div>
-          <p class="para">Lors de l'installation de Postfix, il nous demanderas de choisir le type de paramètrage.</p>
+          <p class="para">Lors de l'installation de Postfix, il nous demandera de choisir le type de paramètrage.</p>
           <p class="para">On indique <span class="cmd-spec">"Site internet"</span> puis on renseigne le domaine qui <span class="cmd-spec">autotech.fr</span></p>
           <div class="cli">
                <div class="headerCli">
@@ -225,7 +225,7 @@
                </h2>
           </div>
           <!-- == Ajouter/Modifier le text pour qu'il corresponde à la seconde tâche décrite dans la section 2 partie installation ==  -->
-          <p class="para">Afin que le client puissent recevoir et envoyé des emails, on doit utiliser un client de mail.</p>
+          <p class="para">Afin que les clients puissent recevoir et envoyer des emails, on doit utiliser un client de mail.</p>
           <p class="para">Pour des raison de sécurité et de simplicité, on utilise l'application : <span class="cmd-spec">Mozilla Thunderbird</span></p>
           <p class="para">Pour l'installer, on se rend sur ce site : <span class="cmd-spec">https://www.thunderbird.net/fr/</span></p>
      </section>

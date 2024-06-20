@@ -5,7 +5,7 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!-- === Modifier le titre de la page : Autotech - Infrastructure - Element === -->
-     <title>Autotech - Infrastructure - DNS</title>
+     <title>Autotech - Infrastructure - SSH</title>
      <!-- === FIN Modifier le titre de la page : Autotech - Infrastructure - Element === -->
      <link rel="stylesheet" href="./pages.css">
 </head>
@@ -15,11 +15,11 @@
      <section class="section sec1">
           <div class="informations">
                <!-- == Modifier le titre avec l'élement == -->
-               <h1 class="title">DNS</h1>
+               <h1 class="title">SSH</h1>
                <!-- == FIN Modifier le titre avec l'élement == -->
 
                <!-- == Modifier la description avec celle de l'élément -->
-               <p class="description">Le DNS (Domain Name System) est un service de traduction de noms de domaine en adresses IP.</p>
+               <p class="description">SSH (Secure Shell) est un protocole permettant de se connecter de manière sécurisé vers une machine distante.</p>
                <!-- == FIN Modifier la description avec celle de l'élément -->
 
                <!-- == Modifier la texte : Découvrir l'installation du [element] == -->
@@ -27,7 +27,7 @@
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                          <path d="M16 10L12 14L8 10" stroke="#F2F9F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                    Découvrir l'installation du DNS !
+                    Découvrir l'installation de SSH !
                </a>
                <!-- == FIN Modifier la texte : Découvrir l'installation du [element] == -->
 
@@ -40,7 +40,7 @@
           </div>
 
           <!-- == Modifier l'image associé à l'élément et le ALT == -->
-          <img src="../assets/img/img_dns.png" alt="illustation d'un dns">
+          <img src="../assets/img/img_ssh.png" alt="illustation d'un ssh">
           <!-- == FIN Modifier l'image associé à l'élément et le ALT == -->
 
      </section>
@@ -53,21 +53,23 @@
                <h1 class="titleSection" style="text-align: start;">Organisation de l'installation/Configuration</h1>
 
                <!-- == Modifier le contexte d'organisation, voir exemple switch, routeur, mini-pc == -->
-               <p class="descOrg">Nous allons configurer DNS afin que les éléments soient capables de traduire des adresses et donc de rendre plus simple la navigation.</p>
+               <p class="descOrg">Nous allons configurer SSH afin d'accéder au serveur Linux ainsi qu'au switch et au routeur.</p>
                <!-- == FIN Modifier le contexte d'organisation, voir exemple switch, routeur, mini-pc == -->
 
                <div class="organisation">
                     <ul class="org">
                          <h2 class="titleOrg">Installation</h2>
                          <!-- == Modifier/Ajouter les chose à installer en rapport avec l'élément == -->
-                         <li>Installation du rôle sur windows serveur</li>
+                         <li>Installation de PuTTY</li>
+                         <li>Installation de SSH sur Linux</li>
+                         <li>Installation de SSH sur Cisco IOS</li>
                          <!-- == FIN Modifier/Ajouter les chose à installer en rapport avec l'élément == -->
                     </ul>
                     <ul class="org">
                          <h2 class="titleOrg">Configuration</h2>
                          <!-- == Modifier/Ajouter les chose à configurer en rapport avec l'élément == -->
-                         <li>Configuration des redirections</li>
-                         <li>Enregistrement</li>
+                         <li>Configuration de SSH sous Cisco IOS</li>
+                         <li>Connexion SSH par PuTTY</li>
                          <!-- == FIN Modifier/Ajouter les chose à configurer en rapport avec l'élément == -->
                     </ul>
                </div>
@@ -78,107 +80,174 @@
      <!-- === SECTION 3 === -->
      <section class="section sec3">
           <!-- == Modifier le titre avec l'élément == -->
-          <h1 class="titleSection">Installation du DNS</h1>
+          <h1 class="titleSection">Installation de SSH</h1>
           <!-- == FIN Modifier le titre avec l'élément == -->
 
           <ul class="orgRappel">
                <h2 class="titleOrg">Rappel : Installation</h2>
                <!-- == Copier/Coller les élement décrit dans la section 2  -->
-               <li>Installation du rôle sur windows serveur</li>
+               <li>Installation de PuTTY</li>
+               <li>Installation de SSH sur Linux</li>
                <!-- == FIN Copier/Coller les élement décrit dans la section 2  -->
           </ul>
 
           <!-- == Ajouter/Modifier le text pour qu'il corresponde à la première tâche décrite dans la section 2 partie installation ==  -->
           <div class="infraTitle">
                <h2 class="infraTitleText" style="font-size: var(--size-18);">
-                    Installation du rôle sur windows serveur
+                    Installation de PuTTY
                </h2>
           </div>
           <!-- == FIN Ajouter/Modifier le text pour qu'il corresponde à la première tâche décrite dans la section 2 partie installation == -->
 
           <!-- == Description avec ce bloc == -->
-          <p class="para">Afin que les différentes machines et services puissent communiquer sur internet tout en restant accessibles, nous mettons en place le service DNS.</p>
-          <p class="para">Pour cela, sur le Gestionnaire de Serveur de Windows, on fait :</p>
-          <ul>
-               <li>On va dans "Ajouter des rôles et des fonctionnalités"</li>
-               <li>On clique sur "suivant"</li>
-               <li>On clique sur "suivant"*3</li>
-               <li>On coche "DNS"</li>
-               <li>On clique sur "suivant" jusqu'arriver sur "Confirmation"</li>
-               <li>On clique sur "installer"</li>
-               <li>Le service s'installe</li>
-          </ul>
+          <p class="para">Pour se connecter facilement avec SSH, on va installer le logiciel puTTY.</p>
           <!-- == FIN Description avec ce bloc ==  -->
+          <div class="organisation">
+               <ul class="org">
+                    <li>Pour télécharger puTTY, on se rend sur putty.org</li>
+                    <li>Une fois installé, on suit les instructions d'installation</li>
+               </ul>
+          </div>
+          <!-- Vous pouvez utiliser d'autre élément voir le README -->
 
+          <!-- == Ajouter/Modifier le text pour qu'il corresponde à la seconde tâche décrite dans la section 2 partie installation ==  -->
+          <div class="infraTitle">
+               <h2 class="infraTitleText" style="font-size: var(--size-18);">
+                    Installation de SSH sur Linux
+               </h2>
+          </div>
+          <!-- == Ajouter/Modifier le text pour qu'il corresponde à la seconde tâche décrite dans la section 2 partie installation ==  -->
+
+          <!-- == Description avec ce bloc == -->
+          <p class="para">Pour qu'un PC client puisse accéder au serveur Linux par SSH, il faut installer le paquet du serveur SSH.</p>
+          <!-- == FIN Description avec ce bloc == -->
+          <div class="cli">
+               <div class="headerCli">
+                    <p class="titleCli">CLI du Shell</p>
+               </div>
+
+               <div class="bodyCli">
+                    <div class="formatCommande">
+                         <p class="invite">root#</p>
+                         <p class="commande">apt install openssh-server</p>
+                    </div>
+               </div>
+          </div>
+
+          <!-- Vous pouvez utiliser d'autre élément voir le README -->
      </section>
      <!-- === FIN SECTION 3 === -->
 
      <!-- === SECTION 4 === -->
      <section class="section sec3">
           <!-- == Modifier le titre avec l'élément == -->
-          <h1 class="titleSection">Configuration du DNS</h1>
+          <h1 class="titleSection">Configuration du SSH</h1>
           <!-- == Modifier le titre avec l'élément == -->
 
           <ul class="orgRappel">
                <h2 class="titleOrg">Rappel : Configuration</h2>
                <!-- == Copier/Coller les élement décrit dans la section 2  -->
-               <li>Configuration des redirections</li>
-               <li>Enregistrement</li>
+               <li>Configuration de SSH sous Cisco IOS</li>
+               <li>Connexion SSH par PuTTY</li>
                <!-- == FIN Copier/Coller les élement décrit dans la section 2  -->
           </ul>
 
           <!-- == Ajouter/Modifier le text pour qu'il corresponde à la première tâche décrite dans la section 2 partie installation ==  -->
           <div class="infraTitle">
                <h2 class="infraTitleText" style="font-size: var(--size-18);">
-                    Configuration des redirections
+                    Configuration de SSH sous Cisco IOS
                </h2>
           </div>
           <!-- == FIN Ajouter/Modifier le text pour qu'il corresponde à la première tâche décrite dans la section 2 partie installation ==  -->
 
           <!-- == Description avec ce bloc == -->
-          <p class="para">Nous allons configurer notre DNS pour qu'il agisse en <span class="cmd-spec">mode récursif</span> qui nous évite de configurer les 13 serveur source DNS présent dans le monde.</p>
-          <p class="para">Pour faire cela :</p>
-          <ul>
-               <li>Sur le gestionnaire de serveur, on va dans le menu : "outils"</li>
-               <li>On clique sur notre domaine, chez nous : "autotech.fr"</li>
-               <li>On clique droit sur le nom de la machine qui héberge le domaine chez nous : "WIN-3VT9K0MLG9N</li>
-               <li>On va dans "Proprétés"</li>
-               <li>On va dans l'onglet "Redirecteurs"</li>
-               <li>On clique sur "Modifier"</li>
-               <li>On indique l'adresse des serveur DNS de l'IUT : 192.168.117.181 et 192.168.117.182</li>
-          </ul>
-          <p class="para">Cette configuration permet a notre serveur DNS de contacter les serveur de l'IUT s'il ne connait pas une adresse.</p>
+          <p class="para">Pour qu'on puisse accéder au switch et au routeur, il faut que SSH soit activé et opérationnel sur le switch et le routeur.</p>
           <!-- == FIN Description avec ce bloc == -->
+          <div class="cli">
+               <div class="headerCli">
+                    <p class="titleCli">CLI de Cisco IOS</p>
+               </div>
 
+               <div class="bodyCli">
+                    <div class="formatCommande">
+                         <p class="invite">Switch></p>
+                         <p class="commande">enable</p>
+                    </div>
+                    <div class="formatCommande">
+                         <p class="invite">Switch#</p>
+                         <p class="commande">conf t</p>
+                    </div>
+                    <div class="formatCommande">
+                         <p class="invite">Switch(config)#</p>
+                         <p class="commande">hostname switch-autotech</p>
+                    </div>
+                    <div class="formatCommande">
+                         <p class="invite">switch-autotech(config)#</p>
+                         <p class="commande">ip domain-name autotech.fr</p>
+                    </div>
+                    <div class="formatCommande">
+                         <p class="invite">switch-autotech(config)#</p>
+                         <p class="commande">crypto-key generate rsa</p>
+                    </div>
+                    <div class="formatCommande">
+                         <p class="invite">switch-autotech(config)#</p>
+                         <p class="commande">ip ssh version 2</p>
+                    </div>
+                    <div class="formatCommande">
+                         <p class="invite">switch-autotech(config)#</p>
+                         <p class="commande">line vty 0 4</p>
+                    </div>
+                    <div class="formatCommande">
+                         <p class="invite">switch-autotech(config-line)#</p>
+                         <p class="commande">transport input ssh</p>
+                    </div>
+                    <div class="formatCommande">
+                         <p class="invite">switch-autotech(config-line)#</p>
+                         <p class="commande">login local</p>
+                    </div>
+                    <div class="formatCommande">
+                         <p class="invite">switch-autotech(config-line)#</p>
+                         <p class="commande">username rt password rt</p>
+                    </div>
+                    <div class="formatCommande">
+                         <p class="invite">switch-autotech(config-line)#</p>
+                         <p class="commande">end</p>
+                    </div>
+                    <div class="formatCommande">
+                         <p class="invite">switch-autotech#</p>
+                         <p class="commande">copy running-config startup config</p>
+                    </div>
+               </div>
+          </div>
           <!-- Vous pouvez utiliser d'autre élément voir le README -->
+          <span class="cmd-spec">Idem pour le routeur !</span>
+
 
           <!-- == Ajouter/Modifier le text pour qu'il corresponde à la seconde tâche décrite dans la section 2 partie installation ==  -->
           <div class="infraTitle">
                <h2 class="infraTitleText" style="font-size: var(--size-18);">
-                    Enregistrement
+                    Connexion SSH par PuTTY
                </h2>
           </div>
           <!-- == FIN Ajouter/Modifier le text pour qu'il corresponde à la seconde tâche décrite dans la section 2 partie installation ==  -->
 
           <!-- == Description avec ce bloc == -->
-          <p class="para">Nous allons enregistrer un certain nombre d'éléments pour le bon fonctionnement du matériel avec l'option A qui permet de faire le lien entre un nom et une IP.</p>
-          <p class="para"><span class="cmd-spec">Configuration des noms d'hôtes</span></p>
-          <p class="para">On attribue à chaque PC windows un nom en allant sur Paramètres > Système > A propos de > Renommer ce PC</p>
-          <p class="para">Sur le service DNS :</p>
-          <ul>
-               <li>Toujours dans le menu DNS présent dans le menu Outils</li>
-               <li>On clique droit sur "Nouvel hôte (A ou AAAA)</li>
-               <li>On indique le nom des pc et l'adresse IP qui sont associé</li>
-          </ul>
-          <p class="para"><span class="cmd-spec">Configuration des domaines pour les sites web</span></p>
-          <p class="para">On confiure en plus deux domaine pour les site web qui sont : "support.autotech.fr" et "www.autotech.fr"</p>
-          <p class="para">Pour consfigurer les domaines : </p>
-          <ul>
-               <li>Même procédure que précedemment</li>
-               <li>On indique comme nom, "support" et "www" car le FQDN est le nom de domaine "autotech.fr"</li>
-          </ul>
-
+          <p class="para">Pour que l'on puisse se connecter au switch, routeur et le serveur Linux, on passe par puTTY.</p>
           <!-- == FIN Description avec ce bloc == -->
+          <div class="organisation">
+               <ul class="org">
+                    <!-- == Modifier/Ajouter les chose à installer en rapport avec l'élément == -->
+                    <li>On lance puTTY.</li>
+                    <li>On coche "SSH"</li>
+                    <li>On saisit l'adresse IP de la machine auquel on souhaite se connecter</li>
+                    <li>On clique sur <span class="cmd-spec">Open</span>.</li>
+                    <li>Lors de la première connexion, une fenêtre s'affiche nous indiquant si on accepte la connexion vers la machine distante.</li>
+                    <!-- == FIN Modifier/Ajouter les chose à installer en rapport avec l'élément == -->
+               </ul>
+          </div>
+          <!-- Vous pouvez utiliser d'autre élément voir le README -->
+
+
 
      </section>
      <!-- === FIN SECTION 4 === -->

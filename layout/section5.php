@@ -110,7 +110,7 @@
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_web.png" alt="photo du service WEB" />
                <h2 class="serviceTextWin">WEB</h2>
-               <a href="#" class="btn">Voir les détails</a>
+               <a href="../pages/Web.php" class="btn">Voir les détails</a>
           </div>
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_mongo.png" alt="photo du service asterisk" />

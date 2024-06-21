@@ -91,7 +91,7 @@
           <!-- == Ajouter/Modifier le text pour qu'il corresponde à la première tâche décrite dans la section 2 partie installation ==  -->
           <div class="infraTitle">
                <h2 class="infraTitleText" style="font-size: var(--size-18);">
-               <li>Installation de MySQL et PhpMyAdmin</li>
+                    <li>Installation de MySQL et PhpMyAdmin</li>
                </h2>
           </div>
           <!-- == FIN Ajouter/Modifier le text pour qu'il corresponde à la première tâche décrite dans la section 2 partie installation == -->
@@ -121,7 +121,7 @@
                     <li>Ensuite, une page s'ouvre automatiquement sur le terminal pour la configuration de phpmyadmin.</li>
                     <li>Tout d'abord, sélectionner apache2 pour choisir le serveur web auquel PhpMyAdmin utilisera pour être exécuté</li>
                     <li>On sélectionne <span class="cmd-spec">Oui</span> pour que la base de données initiale soit automatiquement configurée
-                    par dbconfig-common</li>
+                         par dbconfig-common</li>
                     <li>On saisit le mot de passe de connexion MySQL pour phpmyadmin</li>
                     <li>On saisit le mot de passe pour le compte root permettant de créer la base de données MySQL ainsi que les utilisateurs</li>
                </ul>
@@ -195,7 +195,7 @@
                               `tel` int(100) NOT NULL,
                               `email` int(100) NOT NULL
                               ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-                         COMMIT;</p>
+                              COMMIT;</p>
                     </div>
                </div>
                <div class="bodyCli">
@@ -220,15 +220,15 @@
                          </p>
                     </div>
                </div>
-                    
-               <p class="para">Pour écrire ces requêtes sur PhpMyAdmin, il faut :</p>
-               <div class="organisation">
+          </div>
+          <p class="para">Pour écrire ces requêtes sur PhpMyAdmin, il faut :</p>
+          <div class="organisation">
                <ul class="org">
                     <li>Dans l'onglet <span class="cmd-spec">Base de données</span>, on sélectionne la base de données autotech.</li>
                     <li>Ensuite, on clique sur l'onglet <span class="cmd-spec">SQL</span>, c'est ici qu'on pourra créer nos tables.</li>
                     <li>Dès que nos tables sont créés, on crée nos <span class="cmd-spec">INSERT</span> pour la table 'voiture'.</li>
                </ul>
-               </div>
+          </div>
 
           <!-- Vous pouvez utiliser d'autre élément voir le README -->
           <div class="infraTitle">
@@ -237,13 +237,19 @@
                </h2>
           </div>
           <p class="para">Dans le fichier confirmation.php :</p>
-          <div class="bodyCli">
+
+          <div class="cli">
+               <div class="headerCli">
+                    <p class="titleCli">CLI du Shell</p>
+               </div>
+
+               <div class="bodyCli">
                     <div class="formatCommande">
                          <p class="invite">mysql[autotech]></p>
                          <p class="commande">try {<br>
                               $mySqlConnection = new PDO('mysql:host=localhost:8889; dbname=autotech; charset=utf8', 'root', 'root');<br>
                               } catch (Exception $e) {<br>
-                                   die('Erreur : ' . $e->getMessage());<br>
+                              die('Erreur : ' . $e->getMessage());<br>
                               }<br>
                               <br>
                               $ajouterrdv = "INSERT INTO rdv (nom, prenom, date, description, tel, email) VALUES (:nom, :prenom, :date, :description, :tel, :email)";<br>
@@ -251,8 +257,9 @@
                               $request = $mySqlConnection->prepare($ajouterrdv);<br>
                          </p>
                     </div>
-          </div>
-          <!-- == Ajouter/Modifier le text pour qu'il corresponde à la troisième tâche décrite dans la section 2 partie installation ==  -->
+               </div>
+
+               <!-- == Ajouter/Modifier le text pour qu'il corresponde à la troisième tâche décrite dans la section 2 partie installation ==  -->
      </section>
      <!-- === FIN SECTION 4 === -->
 </body>

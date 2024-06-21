@@ -95,7 +95,7 @@
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_vpn.png" alt="photo du service VPN" />
                <h2 class="serviceTextWin">VPN</h2>
-               <a href="#" class="btn">Voir les détails</a>
+               <a href="../pages/vpn.php" class="btn">Voir les détails</a>
           </div>
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_mail.png" alt="photo du service SMTP/POP" />
@@ -120,7 +120,7 @@
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_sql.png" alt="photo du service mySQL" />
                <h2 class="serviceTextWin">My SQL</h2>
-               <a href="#" class="btn">Voir les détails</a>
+               <a href="../pages/mysql.php" class="btn">Voir les détails</a>
           </div>
           <div class="service">
                <img class="imgServiceWin" src="../assets/img/img_ftp.png" alt="photo du service FTP" />

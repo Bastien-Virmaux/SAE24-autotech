@@ -168,30 +168,34 @@
                     <div class="formatCommande">
                          <p class="invite">root@debian-srv~#</p>
                          <p class="commande">echo ‘1’ > /proc/sys/net/ipv4/tcp_syncookies</p>
+                         <p class="comment"> % Cette commande active les TCP syncookies, une fonctionnalité de protection contre certaines attaques par déni de service (DoS) comme les attaques SYN flood. </p>
                     </div>
                     <div class="formatCommande">
                          <p class="invite">root@debian-srv~#</p>
-                         <p class="commande">echo ‘1024’ > /proc/sys/net/ipv4/tcp_max_syn_backlog</p>
+                         <p class="commande">echo ‘30’ > /proc/sys/net/ipv4/tcp_max_syn_backlog</p>
+                         <p class="comment"> % Cette commande augmente le nombre maximum de connexions SYN non confirmées qui peuvent être maintenues en file d'attente.</p>
                     </div>
                     <div class="formatCommande">
                          <p class="invite">root@debian-srv~#</p>
                          <p class="commande">echo ‘1’ > /proc/sys/net/ipv4/conf/all/rp_filter</p>
-                    </div>
-                    <div class="formatCommande">
-                         <p class="invite">root@debian-srv~#</p>
-                         <p class="commande">net.ipv4.tcp_syncookies =1</p>
-                         <p class="comment">On place les paramètres en permanent.</p>
-                    </div>
-                    <div class="formatCommande">
-                         <p class="invite">root@debian-srv~#</p>
-                         <p class="commande">net.ipv4.conf.all.rp_filter = 1</p>
-                    </div>
-                    <div class="formatCommande">
-                         <p class="invite">root@debian-srv~#</p>
-                         <p class="commande">net.ipv4.tcp_max_syn_backlog = 1024</p>
+                         <p class="comment"> % Cette commande active le Reverse Path Filtering (filtrage de chemin inverse) pour toutes les interfaces réseau.</p>
                     </div>
                </div>
           </div>
+
+          <div class="cli">
+               <div class="headerCli">
+                    <p class="titleCli">/etc/sysctl.conf</p>
+               </div>
+               <div class="bodyCli">
+                    <div class="format">
+                         <p class="commande">net.ipv4.tcp_syncookies =1</p>
+                         <p class="commande">net.ipv4.conf.all.rp_filter = 1</p>
+                         <p class="commande">net.ipv4.tcp_max_syn_backlog = 30</p>
+                    </div>
+               </div>
+          </div>
+
           <!-- Vous pouvez utiliser d'autre élément voir le README -->
 
      </section>

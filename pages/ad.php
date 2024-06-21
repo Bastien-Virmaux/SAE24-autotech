@@ -201,7 +201,76 @@
 
           <p class="para">On configure le mode itératif des comptes afin que chaque session est sont propre répertoire non accessible aux autres comptes.</p>
           <ul>
-               <li>Sur le </li>
+               <p class="para">On configure le mode itératif des comptes afin que chaque session est sont propre répertoire non accessible aux autres comptes.</p>
+               <ul>
+                    <li>Sur le disque C:, on crée un dossier "users" qui contiendra tout les utilisateurs</li>
+                    <li>On le partage sur le réseau pour que chaque utilisateur puissent écrire et lire le dossier.</li>
+                    <li>Sur active directory, sur controleur de domaine, on indique pour chaque utilisateur le chemin vers le dossier personne : c:\\192.168.0.100\users\%username‰</li>
+                    <li>%username% => récupére le nom de chaque utilisateurs</li>
+               </ul>
+
+               <!-- == Ajouter/Modifier le text pour qu'il corresponde à la troisième tâche décrite dans la section 2 partie installation ==  -->
+               <div class="infraTitle">
+                    <h2 class="infraTitleText" style="font-size: var(--size-18);">
+                         Configuration d'une GPO fond d'écran
+                    </h2>
+               </div>
+               <!-- == FIN Ajouter/Modifier le text pour qu'il corresponde à la troisième tâche décrite dans la section 2 partie installation ==  -->
+
+               <p class="para">Afin de reconnaitre les utilisateurs, on va leur appliquer un fond écran.</p>
+               <ul>
+                    <li>Sur le disque C:, on crée un dossier "wallpaper" qui contiendra tous les utilisateurs</li>
+                    <li>On le partage sur le réseau pour que chaque utilisateur puissent écrire et lire le dossier.</li>
+                    <li>Sur active directory, on crée une nouvelle GPO et on fait clique droit "éditer".</li>
+                    <li>On va dans "Configuration Utilisateur" puis "Stratégies" puis "Modèle d'administration" puis "Bureau" puis "Bureau"</li>
+                    <li>On va dans "Papier peint du Bureau", on clique sur "Activé" puis on indique dans le champs "Nom du papier peint" le chemin vers le fond écran.</li>
+                    <li>Style du chemin : \\192.168.0.100\wallpaper\[nom de fond écran]</li>
+               </ul>
+
+
+               <!-- == Ajouter/Modifier le text pour qu'il corresponde à la troisième tâche décrite dans la section 2 partie installation ==  -->
+               <div class="infraTitle">
+                    <h2 class="infraTitleText" style="font-size: var(--size-18);">
+                         Configuration d'une GPO pour le proxy
+                    </h2>
+               </div>
+
+               <p class="para">On configure le proxy sur une nouvelle GPO, afin que chaque PC est la configuration.</p>
+               <p class="para">On fait : </p>
+               <ul>
+                    <li>On va dans Gestion de stratégies et de groupes, on créer un nouveau GPO dans le domaine autotech.fr, puis on le modifie</li>
+                    <li>Ensuite on se rend dans Configuration Utilisateur > Préférences > Paramètres Windows > Registre</li>
+                    <li>Dans Registre, on fais Nouveau puis Element Registre, on lui donne un nom</li>
+                    <li>On configure la nouvelle entrée de Registre de cette manière:
+                         <ul>
+                              <ol>-Action: Mettre à jour</ol>
+                              <ol>-Ruche: HKEY_CURRENT_USER</ol>
+                              <ol>-Chemin d'accès de la clé: \Software\Microsoft\Windows\CurrentVersion\Internet Settings</ol>
+                              <ol>-Nom de valeur: AutoConfigURL</ol>
+                              <ol>-Type de valeur: REG_SZ</ol>
+                              <ol>-Données de valeur: http://192.168.0.110/proxy.pac</ol>
+                         </ul>
+                    </li>
+               </ul>
+               <!-- == FIN Ajouter/Modifier le text pour qu'il corresponde à la troisième tâche décrite dans la section 2 partie installation ==  -->
+
+               <!-- == Ajouter/Modifier le text pour qu'il corresponde à la troisième tâche décrite dans la section 2 partie installation ==  -->
+               <div class="infraTitle">
+                    <h2 class="infraTitleText" style="font-size: var(--size-18);">
+                         Configuration d'une GPO pour les raccourcis bureau
+                    </h2>
+               </div>
+               <!-- == FIN Ajouter/Modifier le text pour qu'il corresponde à la troisième tâche décrite dans la section 2 partie installation ==  -->
+
+               <p class="para">On va créer une nouvelle GPO pour avoir 2 raccourcis sur le bureau menant aux différents sites web.</p>
+               <p class="para">Pour faire ça : </p>
+               <ul>
+                    <li>On va dans "Préférence"</li>
+                    <li>On va dans "Paramètre Windows"</li>
+                    <li>On va dans "Raccourcie"</li>
+                    <li>On clique droit sur "raccourcie" puis "nouveau"</li>
+                    <li>On crée alors les raccourcies, on indique qu'on veut un lien web et on indique le lien.</li>
+               </ul>
           </ul>
      </section>
      <!-- === FIN SECTION 4 === -->

@@ -104,7 +104,7 @@
                <li>Ensuite, on va dans système, on sélectionne "Optique" et on clique sur la fléche du haut pour qu'il boot en priorité sur l'optique.</li>
                <li>On lance la VM</li>
                <li>On configure un mot de passe pour le root et on laisse faire l'installation</li>
-               <li>A la fin de celui-ci, quand il nous demande de redemmarer, on ne redémarre pas mais on quitte la vm. On se rend dans "Configuration" puis "stockage" puis on clique droit sur le lecteur optique et on clique sur l'option "Supprimer le périphérique".</li>
+               <li>A la fin de celui-ci, quand il nous demande de redémmarrer, on ne redémarre pas mais on quitte la vm. On se rend dans "Configuration" puis "stockage" puis on clique droit sur le lecteur optique et on clique sur l'option "Supprimer le périphérique".</li>
           </ul>
           <!-- == FIN Description avec ce bloc ==  -->
 
@@ -148,7 +148,7 @@
           <p class="para">On valide la connexion à l'administration et on skip les différentes publicité.</p>
           <p class="para">On se rend dans l'onglet "Settings" puis "Asterisk SIP Settings"</p>
           <p class="para">On clique sur le bouton "Detect Network Settings" qui permet de détecter les paramètres réseau.</p>
-          <p class="para">Une fois détecter, on clique sur le bouton "submit" puis "Apply config".</p>
+          <p class="para">Une fois détecté, on clique sur le bouton "submit" puis "Apply config".</p>
           <!-- == FIN Description avec ce bloc == -->
 
           <!-- Vous pouvez utiliser d'autre élément voir le README -->

@@ -142,4 +142,11 @@
                <a href="../pages/SSH.php" class="btn">Voir les détails</a>
           </div>
      </div>
+     <div class="servicesAutre">
+          <div class="service">
+               <img class="imgServiceWin" src="../assets/img/attaque.png" alt="photo du service SSH" />
+               <h2 class="serviceTextWin">Attaque DHCP</h2>
+               <a href="../pages/attaque.php" class="btn">Voir les détails</a>
+          </div>
+     </div>
 </section>

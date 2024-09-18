@@ -1,0 +1,38 @@
+.expPro {
+     padding: 24px;
+     border-radius: 51px;
+     background: $color-100;
+     @include flex(24px, row);
+
+     .left {
+          width: 464px;
+          height: 100%;
+          border-radius: 35px;
+          display: flex;
+          align-self: stretch;
+     }
+
+     iframe {
+          max-width: 100%;
+          border-radius: 35px;
+          display: flex;
+          align-self: stretch;
+     }
+
+     .right {
+          @include flex(24px, column);
+          justify-content: flex-start;
+          align-items: center;
+          flex: 1 0 0;
+          align-self: stretch;
+
+          .expProRightTextContainer {
+               @include flex(16px, column);
+               align-items: flex-start;
+
+               .expProRightText {
+                    @include text($color-950, $paragraphe1, $regular);
+               }
+          }
+     }
+}

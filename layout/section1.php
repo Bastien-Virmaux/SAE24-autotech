@@ -1,4 +1,4 @@
-<section class="sec1">
+<section class="section sec1">
      <div class="blur">
           <div class="container">
                <div class="containerText">

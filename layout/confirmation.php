@@ -19,7 +19,7 @@ $email = $_GET['email'];
 
 //connexion à la bd
 try {
-     $mySqlConnection = new PDO('mysql:host=192.168.0.110; port=3306; dbname=autotech; charset=utf8', 'admin', 'Azerty123');
+     $mySqlConnection = new PDO('mysql:host=192.168.0.110; dbname=autotech; charset=utf8', 'root', 'Azerty');
 } catch (Exception $e) {
      die('Erreur : ' . $e->getMessage());
 }
@@ -36,8 +36,6 @@ $request->bindParam(':tel', $tel);
 $request->bindParam(':email', $email);
 
 $request->execute();
-
-$mySqlConnection = null;
 ?>
 
 <body>

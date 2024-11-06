@@ -16,11 +16,8 @@
      require "./layout/section3.php";
      require "./layout/section4.php";
      require "./layout/section5.php";
-     require "./layout/section6.php";
      require "./lib/footer.php";
      ?>
-
-     <script src="./layout/script/name.js"></script>
 </body>
 
 </html>

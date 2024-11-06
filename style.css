@@ -66,7 +66,6 @@ body::-webkit-scrollbar-thumb {
 
 .section {
      width: 100%;
-     padding: 100px 0 100px 0;
      background-color: var(--color-50);
 }
 
@@ -80,7 +79,6 @@ body::-webkit-scrollbar-thumb {
      justify-content: center;
      align-items: center;
      gap: 8px;
-     cursor: pointer;
 }
 
 .titleSection {
@@ -178,6 +176,7 @@ body::-webkit-scrollbar-thumb {
 /* === SECTION 2 === */
 
 .sec2 {
+     height: 100vh;
      padding: 40px;
      display: flex;
      justify-content: center;
@@ -240,66 +239,19 @@ body::-webkit-scrollbar-thumb {
      font-weight: var(--weight-regular);
 }
 
+
+/* === FIN SECTION 2 === */
+
 /* ======================================================== */
 
 /* === SECTION 3 === */
 
 .sec3 {
-     /* ihezof */
-}
-
-.sec3 .containerVoiture {
-     margin-top: 16px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     gap: 16px;
-}
-
-.containerVoiture .voitures {
-     padding: 8px;
-     border-radius: 16px;
-     background-color: var(--color-100);
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     gap: 8px;
-     flex-direction: column;
-}
-
-.voitures .img {
-     width: 300px;
-}
-
-.voitures .nom {
-     text-align: center;
-     font-size: 18px;
-}
-
-.voitures .info {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     gap: 8px;
-}
-
-.info .tag {
-     border-radius: 100px;
-     padding: 4px 8px;
-     background-color: var(--color-200);
-}
-
-/* === FIN SECTION 3 === */
-
-/* ======================================================== */
-
-/* === SECTION 4 === */
-
-.sec4 {
+     height: 100vh;
      padding: 40px;
 }
 
-.sec4 .rdvContainer {
+.sec3 .rdvContainer {
      margin-top: 24px;
      display: flex;
      justify-content: center;
@@ -319,12 +271,12 @@ body::-webkit-scrollbar-thumb {
      font-weight: var(--weight-regular);
 }
 
-/* === FIN SECTION 4 === */
+/* === FIN SECTION 3 === */
 
 /* ======================================================== */
 
-/* === SECTION 5 === */
-.sec5 {
+/* === SECTION 4 === */
+.sec4 {
      padding: 32px;
      display: flex;
      flex-direction: column;
@@ -433,50 +385,17 @@ body::-webkit-scrollbar-thumb {
 
 /* ==STYLE GRID== */
 
-/* === FIN SECTION 5 === */
+/* === FIN SECTION 4 === */
 
 /* ======================================================== */
 
-/* === SECTION 6 === */
+/* === SECTION 5 === */
 
-.sec6 {
-     padding: 32px;
+.sec5 {
+     height: 100vh;
 }
 
-.profils {
-     margin-top: 24px;
-     padding: 24px;
-     border: 2px solid var(--color-900);
-     border-radius: 16px;
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-}
-
-.profils .profil {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
-     gap: 8px;
-}
-
-.profil .imgProfil {
-     width: 40px;
-}
-
-.profil .nom {
-     color: var(--color-500-primary);
-     font-size: var(--size-16);
-     font-weight: var(--weight-medium);
-}
-
-.imgRep {
-     width: 100%;
-     margin-top: 16px;
-}
-
-/* === FIN SECTION 6 === */
+/* === FIN SECTION 5 === */
 
 /* ======================================================== */
 
